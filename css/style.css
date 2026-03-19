@@ -1221,7 +1221,7 @@ ul {
     margin-bottom: 48px;
 }
 
-.footer h4 {
+.footer-title {
     color: white;
     font-size: 1.05rem;
     font-weight: 700;
@@ -1230,7 +1230,7 @@ ul {
     padding-bottom: 12px;
 }
 
-.footer h4::after {
+.footer-title::after {
     content: '';
     position: absolute;
     bottom: 0;
