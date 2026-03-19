@@ -1,6 +1,130 @@
+# =============================================
+# robots.txt - casino-solution.co.kr
+# Last updated: 2026-03-20
+# =============================================
+
+# 기본 규칙: 모든 검색엔진 허용
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Google 크롤러 (검색 + 이미지 + 모바일)
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /images/
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Google AdsBot
+User-agent: AdsBot-Google
+Allow: /
+
+# Bing / MSN 크롤러
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: msnbot
+Allow: /
+
+# 네이버 크롤러 (사용 안 함)
+User-agent: Yeti
+Disallow: /
+
+# 다음(Daum) 크롤러 (사용 안 함)
+User-agent: Daumoa
+Disallow: /
+
+# Yahoo 크롤러
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Yandex 크롤러
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Baidu 크롤러
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# =============================================
+# AI 봇 허용 (GEO 최적화 - 2026)
+# AI가 콘텐츠를 인용하도록 허용
+# =============================================
+
+# ChatGPT / OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Microsoft Copilot
+User-agent: CopilotBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Apple AI (Siri / Apple Intelligence)
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+# =============================================
+# 악성/스팸 봇 차단
+# =============================================
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# =============================================
+# 사이트맵
+# =============================================
 
 Sitemap: https://www.casino-solution.co.kr/sitemap.xml
