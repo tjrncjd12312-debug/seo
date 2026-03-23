@@ -7,6 +7,7 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /admin.html
 Disallow: /private/
 Disallow: /*.json$
 Disallow: /node_modules/
